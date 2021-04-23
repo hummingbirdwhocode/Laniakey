@@ -185,7 +185,7 @@ Once you have a 64 bit image installed, setup proceeds the same as any Linux dis
 ##### Building
 Cancel changes
 - `git clone -b master --single-branch https://github.com/hummingbirdwhocode/Laniakey-V2`
-- `cd excelsior`
+- `cd laniakey`
 - `mkdir build`
 - `cd build`
 - `cmake ..`
