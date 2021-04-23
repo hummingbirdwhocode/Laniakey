@@ -1,8 +1,9 @@
-![image](https://i.imgur.com/GyeeTv5.png)
+![LANIAKEY-4](https://user-images.githubusercontent.com/28062553/115853545-f672bf00-a431-11eb-9e3c-d199e17b48e7.jpg)
+
 
 ### Installing
 
-We offer binary images of the latest releases here: https://github.com/xlscoin/excelsior/releases
+We offer binary images of the latest releases here: https://github.com/hummingbirdwhocode/Laniakey-V2
 
 If you would like to compile yourself, read on.
 
@@ -29,8 +30,8 @@ If you are using Clang, you will need Clang 6.0 or higher. You will also need li
 - `sudo pip install cmake`
 - `export CC=gcc-8`
 - `export CXX=g++-8`
-- `git clone -b master --single-branch https://github.com/xlscoin/excelsior`
-- `cd excelsior`
+- `git clone -b master --single-branch https://github.com/hummingbirdwhocode/Laniakey-V2`
+- `cd laniakey`
 - `mkdir build`
 - `cd build`
 - `cmake ..`
@@ -39,7 +40,7 @@ If you are using Clang, you will need Clang 6.0 or higher. You will also need li
 The binaries will be in the `src` folder when you are complete.
 
 - `cd src`
-- `./Excelsiord --version`
+- `./laniakeyd --version`
 
 ##### Ubuntu, using Clang
 
@@ -63,8 +64,8 @@ You need to modify the below command for your version of ubuntu - see https://ap
 - `sudo pip install cmake`
 - `export CC=clang-6.0`
 - `export CXX=clang++-6.0`
-- `git clone -b master --single-branch https://github.com/xlscoin/excelsior`
-- `cd excelsior`
+- `git clone -b master --single-branch https://github.com/hummingbirdwhocode/Laniakey-V2`
+- `cd laniakey`
 - `mkdir build`
 - `cd build`
 - `cmake ..`
@@ -73,7 +74,7 @@ You need to modify the below command for your version of ubuntu - see https://ap
 The binaries will be in the `src` folder when you are complete.
 
 - `cd src`
-- `./Excelsiord --version`
+- `./laniakeyd --version`
 
 ##### Generic Linux
 
@@ -82,8 +83,8 @@ Ensure you have the dependencies listed above.
 If you want to use clang, ensure you set the environment variables `CC` and `CXX`.
 See the ubuntu instructions for an example.
 
-- `git clone -b master --single-branch https://github.com/xlscoin/excelsior`
-- `cd excelsior`
+- `git clone -b master --single-branch https://github.com/hummingbirdwhocode/Laniakey-V2`
+- `cd laniakey`
 - `mkdir build`
 - `cd build`
 - `cmake ..`
@@ -92,7 +93,7 @@ See the ubuntu instructions for an example.
 The binaries will be in the `src` folder when you are complete.
 
 - `cd src`
-- `./Excelsiord --version`
+- `.laniakeyd --version`
 
 #### OSX/Apple, using GCC
 
@@ -106,8 +107,8 @@ The binaries will be in the `src` folder when you are complete.
 - `brew install --force cmake boost llvm gcc@8`
 - `export CC=gcc-8`
 - `export CXX=g++-8`
-- `git clone -b master --single-branch https://github.com/xlscoin/excelsior`
-- `cd excelsior`
+- `git clone -b master --single-branch https://github.com/hummingbirdwhocode/Laniakey-V2`
+- `cd laniakey`
 - `mkdir build`
 - `cd build`
 - `cmake ..`
@@ -116,7 +117,7 @@ The binaries will be in the `src` folder when you are complete.
 The binaries will be in the `src` folder when you are complete.
 
 - `cd src`
-- `./Excelsiord --version`
+- `./laniakeyd --version`
 
 #### OSX/Apple, using Clang
 
@@ -130,8 +131,8 @@ The binaries will be in the `src` folder when you are complete.
 - `brew install --force cmake boost llvm`
 - `export CC=/usr/local/opt/llvm/bin/clang`
 - `export CXX=/usr/local/opt/llvm/bin/clang++`
-- `git clone -b master --single-branch https://github.com/xlscoin/excelsior`
-- `cd excelsior`
+- `git clone -b master --single-branch https://github.com/hummingbirdwhocode/Laniakey-V2`
+- `cd laniakey`
 - `mkdir build`
 - `cd build`
 - `cmake ..`
@@ -140,7 +141,7 @@ The binaries will be in the `src` folder when you are complete.
 The binaries will be in the `src` folder when you are complete.
 
 - `cd src`
-- `./Excelsiord --version`
+- `./laniakeyd --version`
 
 
 #### Windows
@@ -154,7 +155,7 @@ The binaries will be in the `src` folder when you are complete.
 ##### Building
 
 - From the start menu, open 'x64 Native Tools Command Prompt for vs2017'.
-- `cd <your_excelsior_directory>`
+- `cd <your_lnk_directory>`
 - `mkdir build`
 - `cd build`
 - `set PATH="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin";%PATH%`
@@ -162,13 +163,13 @@ The binaries will be in the `src` folder when you are complete.
 
 If you have errors on this step about not being able to find the following static libraries, you may need to update your cmake. Open 'Visual Studio Installer' and click 'Update'.
 
-- `MSBuild Excelsior.sln /p:Configuration=Release /m`
+- `MSBuild laniakey.sln /p:Configuration=Release /m`
 
 The binaries will be in the `src/Release` folder when you are complete.
 
 - `cd src`
 - `cd Release`
-- `Excelsiord.exe --version`
+- `laniakeyd.exe --version`
 
 #### Raspberry Pi 3 B+
 The following images are known to work. Your operation system image **MUST** be 64 bit.
@@ -182,8 +183,8 @@ The following images are known to work. Your operation system image **MUST** be 
 Once you have a 64 bit image installed, setup proceeds the same as any Linux distribution. Ensure you have at least 2GB of ram, or the build is likely to fail. You may need to setup swap space.
 
 ##### Building
-
-- `git clone -b master --single-branch https://github.com/xlscoin/excelsior`
+Cancel changes
+- `git clone -b master --single-branch https://github.com/hummingbirdwhocode/Laniakey-V2`
 - `cd excelsior`
 - `mkdir build`
 - `cd build`
@@ -193,7 +194,7 @@ Once you have a 64 bit image installed, setup proceeds the same as any Linux dis
 The binaries will be in the `src` folder when you are complete.
 
 - `cd src`
-- `./Excelsiord --version`
+- `./laniakeyd --version`
 
 #### Thanks
 Cryptonote Developers, Bytecoin Developers, Monero Developers, Forknote Project, TurtleCoin Community, DeroGold Association
